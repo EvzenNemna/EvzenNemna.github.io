@@ -1,0 +1,634 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.header-image {
+    height: 240px; /* высота шапки согласно Figma */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px; /* отступ снизу после картинки */
+}
+
+.site-navigation {
+    background-color: #FFFFFF; /* белый фон */
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); тень под навигацией */
+    padding: 20px 0; /* вертикальный отступ для меню */
+    /* margin-bottom: 80px;  */
+}
+
+.navigation-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 853px; /* ширина меню из Figma */
+    height: 25px; /* высота меню из Figma */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 24px; */
+}
+
+.navigation-list li {
+    margin: 0; /* убрать предыдущий margin */
+}
+
+.navigation-list a {
+    text-decoration: none;
+    color: #000000; /* черный цвет текста */
+    font-weight: bold;
+    font-size: 18px; /* предполагаемый размер шрифта, так как он не указан */
+    padding: 0 12px; /* половина gap для равномерного распределения */
+    line-height: 25px; /* высота строки равна высоте меню */
+    background-color: transparent; /* фоновый цвет ссылки */
+    transition: background-color 0.3s; /* плавное изменение фона при наведении */
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus {
+    color: #F04E2A; /* белый текст при наведении */
+}
+
+a.selected-page {
+    color: #F04E2A;
+}
+
+/* ... предыдущий код ... */
+
+.content-block {
+    color: #55565A; /* цвет текста */
+    width: 960px; /* ширина блока */
+    padding: 0 40px; /* внутренний отступ блока */
+    margin: 0 auto 80px; /* автоматический отступ для центровки и отступ снизу */
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* gap: 24px;  */
+}
+
+.content-block h1 {
+    color: #F04E2A;
+    width: 100%;
+    text-align: center;
+    font-family: Arial Narrow, serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.content-block h2 {
+    margin: 0 0 24px;
+    width: 100%;
+    color: #F04E2A;
+    text-align: center;
+    font-family: Arial Narrow, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* text-transform: uppercase; */
+}
+
+.content-block h3 {
+    color: #55565A;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+}
+
+.content-block p {
+    color: #55565A;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+}
+
+.content-block ul {
+    list-style-type: disc; /* стиль маркера списка */
+    padding-left: 20px; /* отступ для маркеров списка */
+    margin: 0;
+}
+
+.content-block .content-text {
+    color: #55565A;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.content-block .content-text .content-img {
+    margin: 40px 10px 50px 10px
+}
+
+.content-block .content-text .image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.content-block a, .content-block a:hover {
+    color: #55565A;
+    text-decoration-line: underline;
+}
+
+.content-block li {
+    margin-bottom: 8px; /* расстояние между элементами списка */
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ... предыдущий код ... */
+
+.advantages-section {
+    width: 960px;
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* выравнивание по центру для всего содержимого раздела */
+    gap: 24px; /* расстояние между элементами внутри раздела */
+    margin-bottom: 0px;
+}
+
+.section-title {
+    text-align: center; /* выравнивание заголовка по центру */
+    width: 100%; /* ширина заголовка для выравнивания текста */
+    margin-bottom: 24px; /* отступ снизу у заголовка */
+    color: #F04E2A;
+    font-family: Arial Narrow, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.advantages-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0; /* если требуется внутренний отступ, его можно задать здесь */
+}
+
+.advantage-item {
+    flex: 1;
+    text-align: center; /* для выравнивания текста под иконками */
+    color: #55565A;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 468px;
+}
+
+.advantage-item p {
+ padding: 0 8px 0 8px;
+ font-size: 14px;
+}
+
+.advantage-item img {
+    margin-bottom: 40px; /* отступ между иконкой и текстом */
+    width: auto; /* предполагаемая ширина иконок */
+    height: 120px; /* предполагаемая высота иконок, размер можно изменить */
+}
+
+.advantage-item img.advantage-icon{
+    width: 140px;
+    height: 140px;
+}
+
+.haven-container {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+div.haven-item {
+    width: 283px;
+    text-align: center;
+}
+
+div.haven-item p {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.content-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.content-group h4 {
+    font-weight: 900;
+    color: #E9502E;
+    margin: 0;
+    font-size: 18px;
+}
+
+.content-list {
+    font-size: 18px;
+}
+
+.link-grey {
+    color: #55565A;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+a.link-orange {
+    color: #E9502E;
+    font-weight: 900;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ... предыдущий код ... */
+
+.divider {
+    width: 960px;
+    height: 1px; /* или '1px' в зависимости от желаемой толщины линии */
+    background-color: rgba(85, 86, 90, 0.25); /* цвет и прозрачность согласно Figma */
+    margin: 80px auto; /* отступ сверху и снизу и авто-маргин для центрирования */
+}
+
+/* ... предыдущий код ... */
+
+.mechanism-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 960px;
+    margin: 0 auto;
+    gap: 120px;
+}
+
+.mechanism-block {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    width: calc((100% - 50px) / 2); /* Вычитаем gap и делим на два блока */
+    padding: 20px;
+    position: relative;
+}
+
+span.mechanism-note {
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.border-svg {
+    position: absolute;
+    width: 39px;
+    height: 100%;
+    top: 0;
+}
+
+.left-border {
+    left: -39px; /* Смещаем левый SVG влево */
+}
+
+.right-border {
+    right: -39px; /* Смещаем правый SVG вправо */
+}
+
+.mechanism-title  {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.mechanism-title.left  {
+    color: #000;
+}
+
+.mechanism-title.right  {
+    color: #E9502E;
+}
+
+.mechanism-note  {
+    color: #E9502E;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.mechanism-icons {
+    margin-top: 20px;
+}
+
+.mechanism-block p {
+    color: #000;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* **/
+
+.guide-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование элементов */
+    width: 960px;
+    margin: 80px auto 0; /* Отступ сверху 80px и авто-маргин слева и справа */
+    padding: 40px; /* Внутренний отступ */
+    gap: 24px; /* Расстояние между элементами */
+    background-color: #FFFFFF; /* Белый фон блока */
+}
+
+.guide-title {
+    color: #E9502E; /* Цвет заголовка */
+    font-family: Arial, sans-serif;
+    font-size: 24px; /* Размер шрифта заголовка */
+    font-weight: 700; /* Жирность шрифта */
+    margin-bottom: 24px; /* Отступ снизу заголовка */
+}
+
+.guide-text {
+    color: #000;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+}
+
+.button-container {
+    text-align: center; /* Центрирование кнопки */
+    width: 100%; /* Ширина контейнера кнопки */
+}
+
+.standard-button {
+    color: #F04E2A; /* Белый цвет текста кнопки */
+    background-color: #FFFFFF; /* Фон кнопки */
+    border: 1px solid #F04E2A; /* Граница кнопки */
+    padding: 16px 59px; /* Внутренний отступ */
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: 13px; /* Размер шрифта кнопки */
+    cursor: pointer; /* Курсор в виде указателя */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+}
+
+.standard-button:hover {
+    background-color: #E9502E;
+    color: white;
+}
+
+/*.guide-button:hover {*/
+/*    background-color: #E9502E; !* Цвет фона кнопки при наведении *!*/
+/*}*/
+
+/* */
+
+.hemonitor-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%; /* Используем всю доступную ширину */
+    max-width: 960px; /* Максимальная ширина секции */
+    margin: 0px auto; /* Верхний отступ и автоматическое выравнивание */
+    padding: 0; /* Убраны внутренние отступы */
+}
+
+.phone-image-wrapper {
+    /* Стили для обертки изображения с телефонами */
+    /* flex: 1;  */
+    display: flex;
+    justify-content: center;
+}
+
+.text-and-button-wrapper {
+    flex: 1; /* Занимаем половину доступного пространства */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    padding: 0 0 24px 0; /* Отступы для текста и кнопки */
+}
+
+.hemonitor-title {
+    color: #F04E2A;
+    text-align: center;
+    font-family: Arial Narrow, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px; /* Отступ под заголовком */
+}
+
+.hemonitor-text {
+    color: #55565A;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin-bottom: 24px; /* Отступ под текстом */
+}
+
+.hemonitor-button {
+    color: #FFFFFF;
+    background-color: #F04E2A;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Анимация фона кнопки */
+}
+
+/*.hemonitor-button:hover {*/
+/*    background-color: #E9502E; !* Цвет кнопки при наведении *!*/
+/*}*/
+
+/* */
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 0 0;
+    background: #FFF;
+}
+
+.content-wrapper {
+    width: 960px;
+    text-align: center;
+}
+
+.text-center {
+    margin-bottom: 20px; /* Расстояние между текстом и контактными деталями */
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Выравнивание иконки и электронной почты по левому краю */
+}
+
+.contact-icon {
+    width: 50px; /* Реальные размеры вашей иконки */
+    height: 50px;
+    margin-right: 20px; /* Расстояние от иконки до адреса электронной почты */
+}
+
+a.email-text {
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    color: #E9502E;
+    font-size: 16px;
+}
+
+.content-wrapper h2 {
+    color: #F04E2A;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 24px;
+    margin: 0 0 10px 0; /* Отступ снизу */
+}
+
+.content-wrapper p {
+    color: #55565A;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: 18px;
+    margin: 0; /* Убрать отступы */
+}
+
+.main-container {
+    overflow: hidden;
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование элементов */
+    margin: 0 auto 0; /* Отступ сверху 80px и авто-маргин слева и справа */
+    padding: 40px; /* Внутренний отступ */
+    gap: 24px; /* Расстояние между элементами */
+    background-color: #FFFFFF; /* Белый фон блока */
+}
+
+.footer .title {
+    color: #55565A;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.footer .content-text {
+    color: #55565A;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer .divider {
+    height: 2px; /* или '1px' в зависимости от желаемой толщины линии */
+    background-color: #0B41CD;
+    stroke-width: 3px;
+    stroke: #0B41CD;
+    margin: 0;
+}
+
+.footer-contact {
+    display: flex; /* Включаем Flexbox */
+    justify-content: flex-start; /* Распределяем пространство между колонками */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    padding: 20px; /* Добавляем отступы для внешнего вида */
+    width: 960px;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-contact .contact {
+    flex-grow: 1; /* Разрешаем обоим элементам занимать одинаковое пространство */
+    padding: 10px; /* Добавляем внутренние отступы */
+}
+
+.footer-contact .logo {
+    flex-basis: 154px;
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+.content-block .red {
+    border: 1px solid #E9502E;
+    background: #E9502E;
+    color: #FFFFFF;
+}
+
+.content-block p.black {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.downloadable-content h4 {
+    color: #55565A;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.downloadable-content p {
+    margin-bottom: 15px;
+}
+
+.link-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+
+.link-wrapper a {
+    color: #F04E2A;
+    font-weight: 900;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 sup {
+    font-size:medium;
+    margin-left: 5px;
+}
+
+.text-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.gap24 {
+    gap: 24px;
+}
+
+.gap12 {
+    gap: 12px
+}
+
+img.advantage-icon.bottle {
+    height: 170px;
+    width: auto;
+}
