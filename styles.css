@@ -208,7 +208,7 @@ h2 {
 
 .advantage-item p {
  padding: 0 8px 0 8px;
- font-size: 14px;
+ font-size: 18px;
 }
 
 .advantage-item img {
@@ -680,7 +680,26 @@ div.expandable-button-header {
     padding: 20px;
 }
 
-div.expandable-button-header:hover {
+div.expandable-button-white {
+    width: 960px;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+div.expandable-button-white-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 960px;
+    gap: 24px;
+}
+
+.expandable-button-wrapper {
+    margin-bottom: 36px;
+}
+
+div.expandable-button-header, div.expandable-button-white-header:hover {
     cursor: pointer;
 }
 
@@ -689,10 +708,11 @@ div.expandable-button-header img {
     height: 12.7px;
 }
 
-div.expandable-button h4 {
+h4.black-header {
     margin: 0;
     color: #000;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 .expandable {
@@ -702,11 +722,11 @@ div.expandable-button h4 {
 }
 
 .expanded {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     transition: all 0.3s ease;
 }
 
-.expandable-button-header .arrow {
+.expandable-button-header .arrow, .expandable-button-white-header .arrow {
     transition: transform 0.3s ease;
 }
 
@@ -716,4 +736,8 @@ div.expandable-button h4 {
 
 p#fviii-studies {
     margin-bottom: 40px;
+}
+
+section#scroll-bottles {
+    text-align: center;
 }
