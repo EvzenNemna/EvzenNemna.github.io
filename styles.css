@@ -1,26 +1,28 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
 .site-header {
     width: 100%;
     margin-top: 50px;
-    margin-bottom: 40px;
 }
 
 .header-image {
     height: 240px; /* высота шапки согласно Figma */
     background-size: cover;
     background-position: center;
-    margin-bottom: 50px; /* отступ снизу после картинки */
+    margin-bottom: 80px; 
 }
 
 .site-navigation {
     background-color: #FFFFFF; /* белый фон */
     /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); тень под навигацией */
-    padding: 20px 0; /* вертикальный отступ для меню */
+    /* padding: 20px 0;  */
     /* margin-bottom: 80px;  */
 }
 
@@ -48,7 +50,7 @@ body {
     padding: 0 12px; /* половина gap для равномерного распределения */
     line-height: 25px; /* высота строки равна высоте меню */
     background-color: transparent; /* фоновый цвет ссылки */
-    transition: background-color 0.3s; /* плавное изменение фона при наведении */
+    transition: color 0.1s; /* плавное изменение фона при наведении */
 }
 
 .navigation-list a:hover,
@@ -65,8 +67,9 @@ a.selected-page {
 .content-block {
     color: #55565A; /* цвет текста */
     width: 960px; /* ширина блока */
-    padding: 0 40px; /* внутренний отступ блока */
-    margin: 0 auto 80px; /* автоматический отступ для центровки и отступ снизу */
+    /* padding: 0 40px; */
+    margin: 0 auto;
+    /* margin: 0 auto 80px; */
     display: flex;
     flex-direction: column;
     /* align-items: flex-start; */
@@ -83,6 +86,11 @@ a.selected-page {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 .content-block h2 {
@@ -136,10 +144,10 @@ a.selected-page {
 }
 
 .content-block .content-text .content-img {
-    margin: 40px 10px 50px 10px
+    margin: 0 10px 0 10px;
 }
 
-.content-block .content-text .image-container {
+.content-block .image-container {
     display: flex;
     justify-content: center;
 }
@@ -159,17 +167,17 @@ a.selected-page {
 .advantages-section {
     width: 960px;
     margin: 20px auto; 
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     align-items: center; /* выравнивание по центру для всего содержимого раздела */
-    gap: 24px; /* расстояние между элементами внутри раздела */
     margin-bottom: 0px;
 }
 
 .section-title {
     text-align: center; /* выравнивание заголовка по центру */
     width: 100%; /* ширина заголовка для выравнивания текста */
-    margin-bottom: 24px; /* отступ снизу у заголовка */
+    /* margin-bottom: 24px; */
     color: #F04E2A;
     font-family: Arial Narrow, serif;
     font-size: 24px;
@@ -218,7 +226,6 @@ a.selected-page {
     display: flex;
     height: fit-content;
     justify-content: space-between;
-    padding: 20px;
 }
 
 div.haven-item {
@@ -236,7 +243,6 @@ div.haven-item p {
     display: flex;
     flex-direction: column;
     /* gap: 15px; */
-    margin-bottom: 80px;
 }
 
 .content-group h4 {
@@ -272,7 +278,7 @@ a.link-orange-thin {
     width: 960px;
     height: 1px; /* или '1px' в зависимости от желаемой толщины линии */
     background-color: rgba(85, 86, 90, 0.25); /* цвет и прозрачность согласно Figma */
-    margin: 80px auto; /* отступ сверху и снизу и авто-маргин для центрирования */
+    margin: 0 auto;
 }
 
 /* ... предыдущий код ... */
@@ -290,7 +296,7 @@ a.link-orange-thin {
     display: flex;
     flex-direction: column;
     /*align-items: center;*/
-    width: calc((100% - 50px) / 2); /* Вычитаем gap и делим на два блока */
+    width: calc((100% - 50px) / 2);
     padding: 20px;
     position: relative;
 }
@@ -359,8 +365,8 @@ span.mechanism-note {
     flex-direction: column;
     align-items: center; /* Центрирование элементов */
     width: 960px;
-    margin: 80px auto 0; /* Отступ сверху 80px и авто-маргин слева и справа */
-    padding: 40px; /* Внутренний отступ */
+    margin: 0 auto 0; /* Отступ сверху 80px и авто-маргин слева и справа */
+    /* padding: 40px;  */
     background-color: #FFFFFF; /* Белый фон блока */
 }
 
@@ -399,6 +405,8 @@ span.mechanism-note {
     line-height: normal;
     letter-spacing: 2.6px;
     text-transform: uppercase;
+    transition: background-color .5s ease;
+    transition: color .5s ease;
 }
 
 .standard-button:hover {
@@ -434,7 +442,7 @@ span.mechanism-note {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Выравнивание по левому краю */
-    padding: 0 0 24px 0; /* Отступы для текста и кнопки */
+    /* padding: 0 0 24px 0;  */
 }
 
 .hemonitor-title {
@@ -525,7 +533,7 @@ a.email-text {
     flex-direction: column;
     align-items: center; /* Центрирование элементов */
     margin: 0 auto 0; /* Отступ сверху 80px и авто-маргин слева и справа */
-    padding: 40px; /* Внутренний отступ */
+    /* padding: 40px;  */
     gap: 24px; /* Расстояние между элементами */
     background-color: #FFFFFF; /* Белый фон блока */
 }
@@ -632,6 +640,10 @@ h1 sup {
     gap: 24px;
 }
 
+.gap36 {
+    gap: 36px;
+}
+
 .gap32 {
     gap: 32px;
 }
@@ -691,7 +703,7 @@ div.expandable-button h4 {
 
 .expanded {
     margin-bottom: 20px;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .expandable-button-header .arrow {
