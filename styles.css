@@ -766,3 +766,7 @@ div.video-grid .video-wrapper img {
     max-width: 222px;
     height: auto;
 }
+
+p.text-small {
+    font-size: 14px;
+}
