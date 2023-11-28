@@ -642,6 +642,10 @@ h1 sup {
     margin-left: 5px;
 }
 
+p sup, li sup {
+    font-size: small;
+}
+
 .text-button-wrapper {
     display: flex;
     flex-direction: column;
@@ -732,6 +736,7 @@ h4.black-header {
 .expanded {
     /* margin-bottom: 20px; */
     transition: all 0.3s ease;
+    padding-bottom: 20px;
 }
 
 .expandable-button-header .arrow, .expandable-button-white-header .arrow {
