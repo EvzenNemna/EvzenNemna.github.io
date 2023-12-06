@@ -798,3 +798,13 @@ div.content-block div.content-half {
 .centered-text p{
     text-align: center;
 }
+
+span.p-important{
+    text-transform: uppercase;
+    color: #F04E2A;
+    font-weight: 900;
+}
+
+ol li a {
+    color: #55565A;
+}
