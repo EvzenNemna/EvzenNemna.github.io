@@ -818,3 +818,11 @@ span.p-important{
 ol li a {
     color: #55565A;
 }
+
+div.haven-container a {
+    text-decoration: none;
+}
+
+div.haven-container a:hover {
+    text-decoration: underline;
+}
