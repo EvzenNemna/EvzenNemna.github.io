@@ -34,12 +34,12 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
-    width: 853px; /* ширина меню из Figma */
-    height: 25px; /* высота меню из Figma */
+    width: fit-content; 
+    height: 25px; 
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    /* gap: 24px; */
+    gap: 24px;
 }
 
 .navigation-list li {
@@ -51,7 +51,6 @@ body {
     color: #000000; /* черный цвет текста */
     font-weight: bold;
     font-size: 18px; /* предполагаемый размер шрифта, так как он не указан */
-    padding: 0 12px; /* половина gap для равномерного распределения */
     line-height: 25px; /* высота строки равна высоте меню */
     background-color: transparent; /* фоновый цвет ссылки */
     transition: color 0.1s; /* плавное изменение фона при наведении */
@@ -213,12 +212,13 @@ h2 {
 .advantage-item p {
  padding: 0 8px 0 8px;
  font-size: 18px;
+ line-height: normal;
 }
 
 .advantage-item img {
-    margin-bottom: 40px; /* отступ между иконкой и текстом */
     width: auto; /* предполагаемая ширина иконок */
     height: 120px; /* предполагаемая высота иконок, размер можно изменить */
+    margin-bottom: 24px;
 }
 
 .advantage-item img.advantage-icon{
@@ -589,7 +589,7 @@ a.email-text {
     padding: 10px;
 }
 
-.content-block .red {
+.content-block .red, .button-container .red {
     border: 1px solid #E9502E;
     background: #E9502E;
     color: #FFFFFF;
@@ -683,6 +683,10 @@ p sup, li sup {
     gap: 24px;
 }
 
+.gap16 {
+    gap: 16px;
+}
+
 .gap12 {
     gap: 12px
 }
@@ -690,6 +694,16 @@ p sup, li sup {
 img.advantage-icon.bottle {
     height: 170px;
     width: auto;
+}
+
+div.border-orange {
+    border: 1px solid #E9502E;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+div.border-orange img {
+    max-width: 908px;
 }
 
 div.expandable-button {
