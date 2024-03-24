@@ -2,7 +2,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
+.body {
     margin: 0;
     padding: 0;
     font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -25,12 +25,23 @@ body {
 
 .site-navigation {
     background-color: #FFFFFF; /* белый фон */
+    width: 100%;
+    display: flex;
+    justify-content: center;
     /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); тень под навигацией */
     /* padding: 20px 0;  */
     /* margin-bottom: 80px;  */
 }
 
-.navigation-list {
+/*.content ul li:before {*/
+/*    display: none;*/
+/*}*/
+
+.margin-bottom-24 {
+    margin-bottom: 24px !important;
+}
+
+ul.navigation-list {
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
@@ -40,6 +51,18 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     gap: 24px;
+}
+
+ul.content-list li::before, ul.navigation-list li::before, ul.content-text li::before, .button-container a::before,
+a.link-orange-thin::before, a.link-orange::before{
+    display: none;
+}
+
+ul.content-list li, ul.content-text li {
+    overflow: visible;
+    list-style: inherit;
+    text-indent: 0;
+    padding: 0;
 }
 
 .navigation-list li {
@@ -96,7 +119,7 @@ h2 {
     margin: 0;
 }
 
-.content-block h2 {
+.content-block .advantages-section h2 {
     margin: 0;
     width: 100%;
     color: #F04E2A;
@@ -177,10 +200,10 @@ h2 {
     margin-bottom: 0px;
 }
 
-.section-title {
+h2.section-title {
     text-align: center; /* выравнивание заголовка по центру */
     width: 100%; /* ширина заголовка для выравнивания текста */
-    /* margin-bottom: 24px; */
+    /*margin-bottom: 24px;*/
     color: #F04E2A;
     font-family: Arial Narrow, serif;
     font-size: 24px;
@@ -278,7 +301,7 @@ a.link-orange-thin {
 
 /* ... предыдущий код ... */
 
-.divider {
+.h-divider {
     width: 960px;
     height: 1px; /* или '1px' в зависимости от желаемой толщины линии */
     background-color: rgba(85, 86, 90, 0.25); /* цвет и прозрачность согласно Figma */
@@ -561,7 +584,7 @@ a.email-text {
     line-height: normal;
 }
 
-.footer .divider {
+.footer .h-divider {
     height: 2px; /* или '1px' в зависимости от желаемой толщины линии */
     background-color: #0B41CD;
     stroke-width: 3px;
