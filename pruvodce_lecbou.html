@@ -12,15 +12,15 @@
         <div class="header-image"
              style="background-image: url('/content/dam/hcp-portals/czech-republic/images/hemilibra/img/header_img_1.png');">
         </div>
-        <nav class="site-navigation">
+        <div class="site-navigation">
             <ul class="navigation-list">
-                <li><a href="index.html">ÚVOD</a></li>
-                <li><a href="pruvodce_lecbou.html" class="selected-page">PRŮVODCE LÉČBOU</a></li>
-                <li><a href="klinicky_vyzkum.html">KLINICKÝ VÝZKUM</a></li>
-                <li><a href="edukacni_materialy.html">DOPORUČENÍ A EDUKACE</a></li>
-                <li><a href="hemonitor.html">HEMONITOR</a></li>
+                <li><a href="hemlibra---2.html">ÚVOD</a></li>
+                <li><a href="hemlibra---21.html" class="selected-page">PRŮVODCE LÉČBOU</a></li>
+                <li><a href="hemlibra---211.html">KLINICKÝ VÝZKUM</a></li>
+                <li><a href="hemlibra---2111.html">DOPORUČENÍ A EDUKACE</a></li>
+                <li><a href="hemlibra---21111.html">HEMONITOR</a></li>
             </ul>
-        </nav>
+        </div>
     </div>
 
     <div class="content-block gap24">
@@ -126,7 +126,7 @@
     </div>
 
     <div class="content-block gap36">
-        <div class="expandable-button-white">
+        <div class="expandable-button" id="white">
             <div class="expandable-button-wrapper">
                 <div class="expandable-button-white-header">
                     <div class="content-text">
@@ -454,6 +454,27 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const expandButtons = document.querySelectorAll('.expandable-button');
+
+        expandButtons.forEach(button => {
+            const expandableContent = button.querySelector('.expandable');
+            const arrowIcon = button.querySelector('.arrow');
+
+            button.addEventListener('click', function () {
+                if (expandableContent.classList.contains('expanded')) {
+                    expandableContent.classList.remove('expanded');
+                    expandableContent.style.maxHeight = '0';
+                    arrowIcon.style.transform = 'rotate(0)';
+                } else {
+                    expandableContent.classList.add('expanded');
+                    expandableContent.style.maxHeight = expandableContent.scrollHeight + 'px';
+                    arrowIcon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
 </div>
 </body>
 </html>
