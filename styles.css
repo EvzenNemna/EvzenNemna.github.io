@@ -13,7 +13,7 @@ html {
 
 .site-header {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .header-image {
@@ -432,6 +432,10 @@ span.mechanism-note {
     color: white;
 }
 
+.standard-button.red:hover {
+    background-color: #D14627;
+}
+
 /*.guide-button:hover {*/
 /*    background-color: #E9502E; */
 /*}*/
@@ -562,7 +566,7 @@ a.email-text {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .footer .content-text {
