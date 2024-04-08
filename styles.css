@@ -742,7 +742,7 @@ div.expandable-button-header {
     padding: 20px;
 }
 
-div#white {
+div#white, div.white {
     width: 960px;
     min-height: fit-content;
     display: flex;
@@ -883,4 +883,8 @@ div.haven-container a {
 
 div.haven-container a:hover {
     text-decoration: underline;
+}
+
+.noclick {
+    pointer-events: none;
 }
